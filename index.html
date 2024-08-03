@@ -1,0 +1,848 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="SAn1VigN39Qd1JzBZhauQDXs2ti1t2SezHQLB6zM">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>The Wedding of Devi & Zena</title>
+    <meta name="description" content="The Wedding of Devi and Zena" />
+	<meta name="keywords" content="wedding, wedding invitation, invitation, the wedding" />
+	<meta name="author" content="Devi & Zena" />
+	<meta property="og:title" content="The Wedding of Devi💕Zena">
+	<meta property="og:description" content="Save the date Minggu, 23 Juni 2024">
+	<link rel="icon" href="assets/icon/favicon.jpg" style="border-radius: 50px;">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/splide-core.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="css/kdo2.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="modal" id="prokes_modal">
+        <div class="modal-content" style="max-width: 400px!important;">
+            <div class="top-border">
+                <img width="40px"
+                    src="./assets/img/1642862592_Asset 1.png" />
+            </div>
+            <div class="bottom-border"></div>
+            <div class="bottom-sign">
+                <h3>-D & Z-</h3>
+            </div>
+            <div class="body p-4" style="border-radius: 7px;overflow: hidden">
+                <!-- <div style="text-align: center;padding-top: 10px;">
+                    <h5>Informasi Protokol Kesehatan</h5>
+                    <p>Acara ini akan dilaksanakan dengan menerapkan protokol kesehatan.</p>
+                    <ul style="margin-top:20px;">
+                        <li>
+                            <div class="item">
+                                <img src="https://s3.ap-southeast-1.amazonaws.com/cdn.kadio.id/cdn/1640741678_Prokes_1.png"
+                                    alt="">
+                                Memakai Masker
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="https://s3.ap-southeast-1.amazonaws.com/cdn.kadio.id/cdn/1640741765_Prokes_2.png"
+                                    alt="">
+                                Menjaga Jarak
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item">
+                                <img src="https://s3.ap-southeast-1.amazonaws.com/cdn.kadio.id/cdn/1640741790_Prokes_3.png"
+                                    alt="">
+                                Mencuci Tangan
+                            </div>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="prokes-footer">
+                    <a href="javascript:void(0)" class="btn-outline-primary btn-ok-prokes"
+                        onclick="confirm_open_invitation()">Baik, Saya Mengerti</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="hide" id="play_button" data-status="play" onclick="play_pause(this)" href="javascript:void(0)">
+        <div id="audio_control" class="pause">
+        </div>
+    </a>
+    <input type="hidden" id="song_url"
+        value="https://s3.ap-southeast-1.amazonaws.com/cdn.kadio.id/songs/marry-your-daughter.mp3">
+
+    <section id="index" class="index animate__animated animate__fadeIn animate__slower">
+        <div class="frame animate__animated animate__fadeIn animate__slow animate__delay-1s">
+            <div>
+                <div class="flower-top animate__animated animate__fadeIn animate__slow animate__delay-2s"><img
+                        src="./assets/img/index-flower.png" alt=""
+                        width="100%"></div>
+                <div class="animate__animated animate__bounceInDown animate__slower">
+                    <h5 class="mb-3">You are invited to our wedding</h5>
+                    <h2 class="font-secondary mb-3">Devi & Zena</h2>
+                    <h4>Minggu, 23 Juni 2024</h4>
+                    <div class="card mb-6">
+                        <div>
+                            <small class="d-block">Kepada Yth.</small>
+                            <small class="d-block">Bpk/Ibu/Saudara/i</small>
+                            <h5 id="nama"></h5>
+                            <small>di Tempat</small>
+                        </div>
+                    </div>
+                    <a id="open_invitation" href="#cover">Buka Undangan</a>
+                </div>
+                <div class="flower-bottom animate__animated animate__fadeIn animate__slow animate__delay-2s"><img
+                        src="./assets/img/index-flower.png" alt=""
+                        width="100%"></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container hide p-0">
+        <div class="nav animate__animated animate__bounceInUp animate__slower animate__delay-2s">
+            <ul class="justify-center">
+                <li><a href="#bridegroom" class="bridegroomNavItem navItem active"><img
+                            src="./assets/img/1.svg" alt=""></a></li>
+                <li><a href="#event" class="eventNavItem navItem"><img src="./assets/img/2.svg"
+                            alt=""></a></li>
+                <li><a href="#story" class="storyNavItem navItem"><img src="./assets/img/3.svg"
+                            alt=""></a></li>
+                <li><a href="#galery" class="galeryNavItem navItem"><img src="./assets/img/4.svg"
+                            alt=""></a></li>
+                <li><a href="#rsvp" class="rsvpNavItem navItem"><img src="./assets/img/5.svg"
+                            alt=""></a></li>
+            </ul>
+        </div>
+
+        <section class="cover" id="cover">
+            <div id="container"></div>
+            <div class="cover-background">
+                <div class="animated-image image-1"></div>
+                <div class="animated-image image-2"></div>
+                <div class="animated-image image-3"></div>
+            </div>
+            <div class="overlay"></div>
+            <div class="frame animate__animated animate__fadeIn animate__slow animate__delay-1s">
+                <div class="detail">
+                    <div class="flower-top animate__animated animate__fadeIn animate__slow animate__delay-1s"><img
+                            src="./assets/img/index-flower.png"
+                            alt="" width="100%"></div>
+                    <h5 class="mb-3 animate__animated animate__flipInY animate__slower animate__delay-1s">We are getting
+                        married</h5>
+                    <h2 class="font-secondary mb-3 animate__animated animate__bounceInUp animate__slower">
+                        Devi &
+                        Zena</h2>
+                    <h4 class="animate__animated animate__bounceInUp animate__slower">
+                        Minggu, 23 Juni 2024</h4>
+                    <p class="d-block animate__animated animate__bounceInUp animate__slower">- Save the Date -<a href="https://calendar.app.google/1NjM1mPo7x7yLRwD8" target="_blank"></a></p>
+                    
+                    <div class="count_down" data-countdown="2024-06-23 08:00:00">
+                        <div class="item animate__animated animate__bounceInUp animate__slower" data-days="00">00
+                            <span>Hari</span>
+                        </div>
+                        <div class="item animate__animated animate__bounceInUp animate__slower" data-hours="00">00
+                            <span>Jam</span>
+                        </div>
+                        <div class="item animate__animated animate__bounceInUp animate__slower" data-minutes="00">00
+                            <span>Menit</span>
+                        </div>
+                        <div class="item animate__animated animate__bounceInUp animate__slower" data-seconds="00">00
+                            <span>Detik</span>
+                        </div>
+                    </div>
+                    <div class="flower-bottom animate__animated animate__fadeIn animate__slow animate__delay-1s"><img
+                            src="./assets/img/index-flower.png"
+                            alt="" width="100%"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bridegroom" id="bridegroom">
+            <div class="content">
+                <h2 data-aos="fade-up" data-aos-duration="1500">Assalamu'alaikum Wr. Wb.</h2>
+                <p class="mt-4 mb-8" data-aos="fade-up" data-aos-duration="1000" style="white-space: pre-wrap;">Tanpa mengurangi rasa hormat. Kami mengundang Bapak/Ibu/Saudara/i serta Kerabat sekalian untuk menghadiri acara pernikahan kami:</p>
+                <div class="row bride-profile">
+                    <div class="left-flower"></div>
+                    <div class="right-flower"></div>
+                    <div class="col mb-6">
+                        <div class="image-bride" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="bg-flower groom"></div>
+                            <img class="bride"
+                                src="./assets/img/devi.jpg"
+                                alt="">
+                            <div class="flower groom"></div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <h4 class="mb-2 mt-2">Devi Apriyani</h4>
+                            <!-- <h5 class="mb-2">dr Ucok Fernando</h5> -->
+                            <p class="mb-2">Putri dari</p>
+                            <p class="bold">Bapak Tasmono</p>
+                            <p class="bold line-height-1">&</p>
+                            <p class="bold mb-4">Ibu Carikem</p>
+                            <!-- <p style="white-space: pre-wrap">Jakarta Timur</p> -->
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="image-bride" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="bg-flower bride"></div>
+                            <img class="bride"
+                                src="./assets/img/zena.jpg"
+                                alt="">
+                            <div class="flower bride"></div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="1000">
+                            <h4 class="mb-2 mt-2">Zena Muhamad Fahry</h4>
+                            <!-- <h5 class="mb-2">Butet Fransiska, SH., MH.</h5> -->
+                            <p class="mb-2">Putra dari</p>
+                            <p class="bold">Bapak Andri Hidayat</p>
+                            <p class="bold line-height-1">&</p>
+                            <p class="bold mb-4">Ibu Atin Supriatin</p>
+                            <!-- <p style="white-space: pre-wrap">Jakarta Selatan</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event" id="event">
+            <div class="content">
+                <h2 class="mb-4" data-aos="fade-up" data-aos-duration="1500">Save The Date</h2>
+                <div class="row justify-center mt-6 flex-wrap">
+                    <div class="item mb-8">
+                        <div class="detail" data-aos="fade-up" data-aos-duration="1000">
+                            <h3 class="mb-2">Akad Nikah</h3>
+                            <p>Minggu, 23 Juni 2024</p>
+
+                            <p class="mb-2">08:00 -
+                                09:00 WIB</p>
+                            <p class="bold mb-2">Jl H Sanusi No 102</p>
+                            <p>Mekarjaya Kec Rancasari Kota Bandung</p>
+                            <div class="d-flex align-center justify-center mt-3">
+                                <a target="_blank" href="https://maps.app.goo.gl/FuyvQ6ugt3DkHXt9A?g_st=iw"
+                                    class="btn-open-map mr-2">Buka Map
+                                    <img
+                                        src="./assets/img/maps-white.png"></a>
+                                <a target="_blank" href="https://www.instagram.com/deviapriyani659/" class="btn-open-live">Live <img
+                                        src="./assets/img/live-white.png"
+                                        alt="" width="24"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item mb-8">
+                        <div class="detail" data-aos="fade-up" data-aos-duration="1000">
+                            <h3 class="mb-2">Waktu Resepsi</h3>
+                            <p>Minggu, 23 Juni 2024</p>
+
+                            <p class="mb-2">10:00 -
+                                Selesai</p>
+                            <p class="bold mb-2">Jl H Sanusi No 102</p>
+                            <p>Mekarjaya Kec Rancasari Kota Bandung</p>
+                            <div class="d-flex align-center justify-center mt-3">
+                                <a target="_blank" href="https://maps.app.goo.gl/FuyvQ6ugt3DkHXt9A?g_st=iw"
+                                    class="btn-open-map mr-2">Buka Map
+                                    <img
+                                        src="./assets/img/maps-white.png"></a>
+                                <a target="_blank" href="https://www.instagram.com/zenamuhamadfahry/" class="btn-open-live">Live <img
+                                        src="./assets/img/live-white.png"
+                                        alt="" width="24"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="story" id="story">
+            <div class="content">
+                <h2 data-aos="fade-up" data-aos-duration="1500" class="mb-8">Our Love Story</h2>
+                <div class="list-stories-new">
+                    <div class="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="detail">
+                                        <div class="h-100">
+                                            <div class="h-100 p-5">
+                                                <h5 class="mb-2">Kenalan</h5>
+                                                <p class="italic mb-2">Kampus, 2019</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+                                                    fugiat harum in magnam modi nesciunt non placeat qui sapiente
+                                                    voluptas!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="detail">
+                                        <div class="h-100">
+                                            <div class="h-100 p-5">
+                                                <h5 class="mb-2">Jadian</h5>
+                                                <p class="italic mb-2">Oktober, 2019</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+                                                    fugiat harum in magnam modi nesciunt non placeat qui sapiente
+                                                    voluptas!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="detail">
+                                        <div class="h-100">
+                                            <div class="h-100 p-5">
+                                                <h5 class="mb-2">Tunangan</h5>
+                                                <p class="italic mb-2">Maret, 2020</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+                                                    fugiat harum in magnam modi nesciunt non placeat qui sapiente
+                                                    voluptas!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="detail">
+                                        <div class="h-100">
+                                            <div class="h-100 p-5">
+                                                <h5 class="mb-2">Nikah</h5>
+                                                <p class="italic mb-2">Jakarta, 18 Juni 2021</p>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque,
+                                                    fugiat harum in magnam modi nesciunt non placeat qui sapiente
+                                                    voluptas!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="galery" id="galery">
+            <div class="content">
+                <div class="top-left" data-aos="fade-up"></div>
+                <div class="top-right"></div>
+                <h2 data-aos="fade-up" data-aos-duration="1500">Photo Gallery</h2>
+                <div class="image-list mt-4">
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7385.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7385.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6606.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6606.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6611.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6611.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6615.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6615.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6620.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6620.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7398.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7398.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7399.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7399.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7416.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7416.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7425.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7425.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7432.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7432.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7441.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7441.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7447.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7447.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7570.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7570.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7572.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7572.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7578.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7578.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7580.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7580.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7586.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7586.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7617.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7617.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7629.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7629.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7632.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7632.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7644.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7644.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/DSC_7670.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/DSC_7670.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6226.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6226.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6231.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6231.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6250.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6250.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6287.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6287.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6296.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6296.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6308.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6308.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6311.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6311.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6355.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6355.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6369.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6369.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6380.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6380.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6392.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6392.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6524.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6524.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6548.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6548.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6571.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6571.jpg"
+                                alt=""></a>
+                    </div>
+                    <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                        <a href="./assets/gallery/NAD_6572.jpg"
+                            data-lightbox="roadtrip"><img
+                                src="./assets/gallery/NAD_6572.jpg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="rsvp" id="rsvp">
+            <div class="content">
+                <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000">Doa & Ucapan</h2>
+                <div class="form_message mt-6" data-aos="fade-up" data-aos-duration="1500">
+                    <form id="comment_form" action="https://script.google.com/macros/s/AKfycbzuWuwZ-Uub-4OngN-EeZdmKzuukG8GbPd0V2JmLCr6Hb3VpDz6_mP1CmHFFGrMrXYJyQ/exec" method="POST">
+                        <input type="hidden" id="invitation_code" name="invitation_code" value="872g3flu">
+                        <input type="hidden" id="guest_id" name="guest_id" value="">
+                        <input type="hidden" value="439" name="order_detail_invitation_id">
+                        <label for="">Nama : </label>
+                        <input id="comment_name" type="text" name="comment_name" value="">
+                        <p class="font-primary"></p>
+                        <br>
+                        <label for="">Pesan untuk Mempelai :</label>
+                        <textarea id="comment_content" type="text" name="comment_content" rows="3" class="mb-5"></textarea>
+                        <label for="">Kehadiran :</label>
+                        <div class="mt-1 d-flex align-center">
+                            <input type="radio" name="status" value="Hadir" id="hadir" checked><label
+                                class="font-primary ml-2" for="hadir">Hadir</label>
+                        </div>
+                        <div class="mt-2 d-flex align-center">
+                            <input type="radio" name="status" value="Tidak Hadir" id="absent"><label
+                                class="font-primary ml-2" for="absent">Tidak Hadir</label>
+                        </div>
+                        <div class="mt-2 d-flex align-center">
+                            <input type="radio" name="status" value="Masih Ragu" id="maybe"><label
+                                class="font-primary ml-2" for="maybe">Masih Ragu</label>
+                        </div>
+                        <br>
+                        <button type="submit" class="mb-4">Kirim <img
+                                src="./assets/img/send-blue.png" style="width: 25px;"
+                                alt=""></button>
+                        <button style="background: #394859;color:#fff;" type="button" id="btn_send_gift">
+                            Kado <img
+                                src="./assets/img/gift-white.png"
+                                alt="" style="width: 20px!important;">
+                        </button>
+                        <br><br>
+                        <p style="line-height: 25px;">Atas doa & ucapan bapak/ibu/saudara/i, Kami mengucapkan terima
+                            kasih.</p>
+                        <p class="mb-4 mt-4">Salam</p>
+                        <b>
+                            <p>Devi 
+                                💕Zena</p>
+                        </b>
+                        <input type="hidden" name="comment_id" id="comment_id" value="0" />
+                    </form>
+                </div>
+                <div class="message_guest" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="mb-4">Doa & Ucapan dari undangan</p>
+                    <ul id="message_list" style="list-style: none;">
+                        <span id="comment_message"></span>
+                        <li id="display_comment"></li>
+                    </ul>
+                    <div id="pagination">
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <footer>
+                <p style="text-align: center;padding:10px;margin-bottom: 0;">&copy; 2024 by : <a target="_blank"
+                        href="https://www.instagram.com/cho_aryant/"><strong style="color: #543203;">eAryant</strong></a></p>
+            </footer>
+        </section>
+        <div class="modal" id="send_gift_modal">
+            <div class="modal-content" style="max-width: 400px!important;">
+                <div class="header">
+                    <div class="close-modal">x</div>
+                </div>
+                <div class="body"
+                    style="border-radius: 7px;overflow: hidden;overflow-y: auto;border-top: 10px solid #fff;">
+                    <section class="modal-send-gift">
+                        <div id="list_account_gift">
+                            <h3 style="font-size: 1.5rem" class="text-center pb-2 title-gift" data-aos="fade-up"
+                                data-aos-duration="1500">Kado Digital</h3>
+                            <div>
+                                <div class="row p-3">
+                                    <div class="col-12" style="height: 100%;">
+                                        <ul>
+                                            <li class="mb-3">
+                                                <div class="item">
+                                                    <label>Nama Bank</label>
+                                                    <div class="value bank-name mb-1">
+                                                        Bank BCA
+                                                    </div>
+                                                    <label>Nama Rekening</label>
+                                                    <div class="value account-name mb-1">
+                                                        Devi Apriyani
+                                                    </div>
+                                                    <label class="text-dark">2801931393</label>
+                                                    <div class="value account-number">
+                                                        <input type="text" value="2801931393" disabled class="text-dark">
+                                                        <a href="javascript:void(0)" data-number="2801931393"
+                                                            class="copy">Copy</a>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <div class="item text-center justify-center">
+                                                    <a style="background: #394859;color:#fff; border-radius: 10px;" type="button" id="btn_send_gift"
+                                                    href="https://api.whatsapp.com/send?phone=6281219426886&amp;text=Hai%20saya%20mau%20konfirmasi%20kado%20berupa" target="_blank">
+                                                        Konfirmasi Mempelai <img
+                                                            src="./assets/icon/whatsapp.svg"
+                                                            alt="" style="width: 20px!important;">
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <!-- <li class="mb-3">
+                                                <div class="item">
+                                                    <label>Nama Bank</label>
+                                                    <div class="value bank-name mb-1">
+                                                        Ovo
+                                                    </div>
+                                                    <label>Nama Rekening</label>
+                                                    <div class="value account-name mb-1">
+                                                        Ucok Fernando
+                                                    </div>
+                                                    <label>Nomor Rekening</label>
+                                                    <div class="value account-number">
+                                                        <input type="text" value="787878000" disabled>
+                                                        <a href="javascript:void(0)" data-number="787878000"
+                                                            class="copy">Copy</a>
+                                                    </div>
+                                                </div>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        	      window.addEventListener("load", function() {
+      const form = document.getElementById('comment_form');
+      form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+        .then(() => {
+          alert("Konfirmasi berhasil!");
+        })
+      });
+    });
+	
+$(document).ready(function(){
+ 
+ $('#comment_form').on('submit', function(event){
+  event.preventDefault();
+  var form_data = $(this).serialize();
+  $.ajax({
+   url:"add_comment.php",
+   method:"POST",
+   data:form_data,
+   dataType:"JSON",
+   success:function(data)
+   {
+    if(data.error != '')
+    {
+     $('#comment_form')[0].reset();
+     $('#comment_message').html(data.error);
+     $('#comment_id').val('0');
+     load_comment();
+    }
+   }
+  })
+ });
+
+ load_comment();
+
+ function load_comment()
+ {
+  $.ajax({
+   url:"fetch_comment.php",
+   method:"POST",
+   success:function(data)
+   {
+    $('#display_comment').html(data);
+   }
+  })
+ }
+
+ $(document).on('click', '.reply', function(){
+  var comment_id = $(this).attr("id");
+  $('#comment_id').val(comment_id);
+  $('#comment_name').focus();
+ });
+ 
+});
+
+$(document).ready(function() {
+    // Tambahkan event listener pada tombol "Balas"
+    $('.reply').click(function() {
+        var commentId = $(this).data('comment-id');
+        showReplyForm(commentId);
+    });
+});
+
+function showReplyForm(commentId) {
+    // Buat elemen form input balasan komentar
+    var replyForm = $('<div class="reply-form my-3">' +
+                        '<textarea class="form-control" placeholder="Tulis balasan komentar"></textarea>' +
+                        '<button type="button" class="btn btn-dark btn-sm mt-2 submit-reply">Kirim</button>' +
+                    '</div>');
+
+    // Tampilkan form input balasan komentar di bawah komentar yang dipilih
+    $('#comment-' + commentId).append(replyForm);
+
+    // Tambahkan event listener pada tombol "Kirim"
+    replyForm.find('.submit-reply').click(function() {
+        var replyContent = replyForm.find('textarea').val();
+        submitReply(commentId, replyContent);
+        replyForm.remove();
+    });
+}
+
+function submitReply(commentId, replyContent) {
+    // Kirim balasan komentar ke server menggunakan AJAX
+    // ...
+}
+
+$(document).ready(function() {
+    // Tambahkan event listener pada link pagination
+    $('.pagination a').click(function(e) {
+        e.preventDefault(); // Mencegah refresh halaman
+        var page = $(this).attr('href').split('=')[1];
+        loadComments(page);
+    });
+
+    // Panggil fungsi untuk memuat komentar pada halaman pertama
+    loadComments(1);
+});
+
+function loadComments(page) {
+    $.ajax({
+        url: 'fetch_comment.php',
+        type: 'GET',
+        data: { page: page },
+        success: function(response) {
+            $('#message_list').html(response);
+        },
+        error: function() {
+            alert('Terjadi kesalahan saat memuat komentar.');
+        }
+    });
+}
+
+// script.js
+$(document).ready(function() {
+    $('.love-button').click(function() {
+        var commentId = $(this).data('comment-id');
+        $.ajax({
+            url: 'like_comment.php',
+            type: 'POST',
+            data: { comment_id: commentId },
+            success: function(response) {
+                $('.love-button[data-comment-id="' + commentId + '"] .love-count').text(response);
+            }
+        });
+    });
+});
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="js/count-down.js"></script>
+    <script src="js/common.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="js/falling-flower.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <script src="./js/rsvp.js"></script>
+</body>
+
+</html>
